@@ -2,85 +2,12 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <link href="css/estilo.css" rel="stylesheet">
         <title>Contato</title>
     </head>
-
-    <style>
-        form {
-            /*Colocar a tela no meinho [la ele]*/
-            margin: 0 auto;
-            width: 400px;
-            border: 1px solid #ccc;
-            border-radius: 1em;
-            padding: 10px;
-            background-color:wheat;
-        }
-
-        form div + div {
-            margin-top: 15px;
-        }
-
-        label {
-            text-align: right;
-            display: inline-block;
-            width: 80px;
-        }
-
-        textarea{
-            font: 12px sans-serif;
-            width: 300px;
-            border: 1px solid teal;
-            box-sizing: border-box;
-            border-radius: 3px;
-            vertical-align: top;
-            height: 100px
-        }
-
-        input{
-            width: 299px;
-            border: 1px solid teal;
-        }
-
-        h3{
-            text-align: center;
-        }
-
-        button{
-            margin-left: 330px;
-        }
-
-        body {
-             background-color: whitesmoke;
-        }
-    </style>
-
     <body>
-        <div id="form_contato">
-            <form action="contato.php" method="GET">
-                <div name="titulo">
-                    <h3>Contato</h3>
-                </div>
-
-                <div name="nome">
-                    <label>Nome:</label>
-                    <input type="text" id="nome_cliente" placeholder="Digite seu nome">
-                </div>
-
-                <div name="email">
-                    <label>Email:</label>
-                    <input type="email" id="email_cliente"  placeholder="Digite seu email">
-                </div>
-
-                <div name="mensagem">
-                    <label>Mensagem:</label>
-                    <textarea id="mensagem_cliente"  placeholder="Escreva sua mensagem"></textarea>
-                </div>
-
-                <div name="botao">
-                    <button id="enviar">Enviar</button>
-                </div>
-            </form>
+        <div id="app">
         </div>
-        
     </body>
+    <script  src="js/script.js"></script>
 </html>

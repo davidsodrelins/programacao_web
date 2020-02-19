@@ -2,70 +2,9 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <link href="css/estilo.css" rel="stylesheet">
         <title>Contato</title>
     </head>
-
-    <style>
-        form {
-            /*Colocar a tela no meinho [la ele]*/
-            margin: 0 auto;
-            width: 400px;
-            border: 1px solid #ccc;
-            border-radius: 1em 0 1em 0;
-            padding: 10px;
-            background-color: cadetblue;
-        }
-
-        form div + div {
-            margin-top: 15px;
-        }
-
-        label {
-            text-align: right;
-            display: inline-block;
-            width: 80px;
-        }
-
-        textarea{
-            font: 12px sans-serif;
-            width: 300px;
-            border: 1px solid teal;
-            box-sizing: border-box;
-            border-radius: 3px;
-            vertical-align: top;
-            height: 100px
-        }
-
-        input{
-            width: 299px;
-            border: 1px solid teal;
-            border-radius: 3px;
-        }
-
-        select{
-            border-radius: 3px;
-
-        }
-
-        h3{
-            text-align: center;
-        }
-
-        button{
-            margin-left: 330px;
-        }
-
-        body {
-             background-color: whitesmoke;
-        }
-
-        #poder input{
-            width: 50px;
-        }
-
-
-    </style>
-
     <body>
         <div id="form_contato">
             <form action="contato.php" method="GET">
@@ -75,7 +14,7 @@
 
                 <div name="nome">
                     <label>Nome:</label>
-                    <input type="text" id="nome_cliente" placeholder="Digite o nome do pokemon">
+                    <input type="text" id="nome_pokemon" placeholder="Digite o nome do pokemon">
                 </div>
 
                 <div name="tipo">
@@ -89,7 +28,6 @@
                         <option value="">Gelo</option>
                         <option value="">Psiquico</option>
                         <option value="">Planta</option>
-
                     </select>
                 </div>
 
@@ -98,8 +36,8 @@
                         <label>Ataque:</label>
                         <input type="number" id="ataque"  placeholder="0-100" maxlength="3" max="100">
                         <label>Evoluído?</label>
+                    </div>  
 
-                    </div>                
                     <div name="defesa">
                         <label>Defesa:</label>
                         <input type="number" id="defesa"  placeholder="0-100" maxlength="3" max="100">
@@ -116,8 +54,9 @@
                 <div name="botao">
                     <button id="enviar">Enviar</button>
                 </div>
+
             </form>
         </div>
-        
     </body>
+    <script  src="js/script.js"></script>
 </html>
